@@ -13,6 +13,7 @@
     --background-color: #2F303A;
     --accent-button-color: #188CE8;
     --phone-mail-color: rgba(255, 255, 255, 0.6);
+    --coloreeeeee: #EEEEEE;
 }
 
 body {
@@ -28,7 +29,6 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
     /* outline: 2px solid #000000; */
 }
 h1,h2,h3,h4,h5,h6,p ul{
@@ -37,8 +37,10 @@ h1,h2,h3,h4,h5,h6,p ul{
     padding-left: 0;
 }
 
-.galary{
-list-style: none;
+.gallery{
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
 }
 
 /* Утиліти */
@@ -427,23 +429,31 @@ border-radius: 4px;
 .buttons{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
-.buttons-container{
-    margin-bottom: 50px;
-}
-
-
-.buttons-container .item + .item{
+.buttons .item + .item{
     margin-left: 8px;
 }
 
-/* Galary */
-.galary{
+/* Gallery */
+
+.main-gallery{
     margin-bottom: 94px;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-text{
+padding: 20px 0px 20px 24px;
+border-left: 1px solid var(--coloreeeeee);
+border-right: 1px solid var(--coloreeeeee);
+border-bottom: 1px solid var(--coloreeeeee);
 }
 
-.galary .title{
+.gallery .title{
 font-weight: 700;
 font-size: 18px;
 line-height: 2.00;
@@ -451,28 +461,22 @@ letter-spacing: 0.06em;
 color: var(--title-text-color);
 }
 
-.galary .paragraph{
+.gallery .paragraph{
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
+margin-bottom: 0px;
+/* margin-top: 4px; */
 }
 
-.flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 1230px;
-    margin-top: 0;
-    margin-bottom: 0;
-    
-}
+
 
 .flex-item{
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
     list-style: none;
-    border: 1px solid #EEEEEE;
 }
 
 .flex-item:nth-child(3n){
