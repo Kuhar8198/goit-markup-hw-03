@@ -231,10 +231,14 @@ clip: rect(0 0 0 0);
 clip-path: inset(50%);
 margin: -1px;
 }
-.features{
-display: flex;
+.features-main{
 padding-top: 94px;
 padding-bottom: 47px;
+}
+
+.features{
+display: flex;
+
 }
 
 .features .item{
