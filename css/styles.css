@@ -14,6 +14,7 @@
     --accent-button-color: #188CE8;
     --phone-mail-color: rgba(255, 255, 255, 0.6);
     --coloreeeeee: #EEEEEE;
+    --border: #ECECEC;
 }
 
 body {
@@ -31,10 +32,19 @@ body {
     padding-right: 15px;
     /* outline: 2px solid #000000; */
 }
-h1,h2,h3,h4,h5,h6,p ul{
+h1,h2,h3,h4,h5,h6,p,ul{
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0;
+}
+
+ul{
+margin: 0;
+padding:  0;
+list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
 }
 
 .gallery{
@@ -44,16 +54,15 @@ margin-bottom: 0;
 }
 
 /* Утиліти */
-.list{
-list-style: none;
-margin: 0;
-padding: 0;
-}
+
 .link{
 text-decoration: none;
 }
 
 /* Шапка сайту */
+.header{
+    border-bottom: 1px solid var(--border);
+}
 .header-nav{
     display: flex;
     align-items: center;
@@ -163,7 +172,7 @@ color: #000000;
 background-color: var(--background-color);
 text-align: center;
 padding-top: 200px;
-padding-bottom: 280px;
+padding-bottom: 200px;
 }
 .main-hero{
     align-items: center;
@@ -224,6 +233,8 @@ margin: -1px;
 }
 .features{
 display: flex;
+padding-top: 94px;
+padding-bottom: 47px;
 }
 
 .features .item{
@@ -252,7 +263,8 @@ color: var(--primary-text-color);
     
 /* About */
 .about{
-    padding-bottom: 94px;
+padding-top: 47px;
+padding-bottom: 94px;
 }
 
 .about-title,
@@ -265,6 +277,7 @@ letter-spacing: 0.03em;
 color:var(--title-text-color);
 
 margin-top: 0;
+margin-bottom: 50px;
 
 }
 
@@ -300,7 +313,10 @@ margin-top: 0;
 .team-flex-container .item + .item{
     margin-left: 30px;
 }
-
+.names{
+padding-top: 30px;
+padding-bottom: 30px;
+}
 .team .title{
 font-weight: 500;
 font-size: 16px;
@@ -425,11 +441,13 @@ background-color: var(--secondary-back-color);
 cursor: pointer;
 border-color: transparent;
 border-radius: 4px;
+padding: 6px 25px;
 }
+
 .buttons{
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .buttons .item + .item{
@@ -439,6 +457,7 @@ border-radius: 4px;
 /* Gallery */
 
 .main-gallery{
+    padding-top: 94px;
     margin-bottom: 94px;
 
 }
@@ -467,7 +486,7 @@ line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
 margin-bottom: 0px;
-/* margin-top: 4px; */
+margin-top: 4px;
 }
 
 
