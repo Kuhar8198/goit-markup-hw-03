@@ -174,9 +174,7 @@ text-align: center;
 padding-top: 200px;
 padding-bottom: 200px;
 }
-.main-hero{
-    align-items: center;
-}
+
 
 .hero .hero-title{
 font-weight: 900;
@@ -345,9 +343,6 @@ margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
 }
 
 .team .item{
@@ -470,7 +465,7 @@ padding: 6px 25px;
     flex-wrap: wrap;
 }
 .gallery-text{
-padding: 20px 0px 20px 24px;
+padding: 20px 20px 20px 24px;
 border-left: 1px solid var(--coloreeeeee);
 border-right: 1px solid var(--coloreeeeee);
 border-bottom: 1px solid var(--coloreeeeee);
@@ -496,10 +491,10 @@ margin-top: 4px;
 
 
 .flex-item{
-    width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-    list-style: none;
+
+    flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
 .flex-item:nth-child(3n){
